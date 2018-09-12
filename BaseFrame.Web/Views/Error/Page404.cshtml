@@ -1,0 +1,94 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>访问页面不存在</title>
+    <style type="text/css">
+        * {
+            box-sizing: border-box;
+            font-family: Microsoft YaHei, 'Hiragino Sans GB', 'Microsoft Yahei', 微软雅黑, 宋体, Tahoma, Helvetica, STHeiti;
+        }
+
+        body {
+            background-color: rgb(1,167,172);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .context {
+            display: block;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 3px 5px #0CC;
+        }
+
+        .txt {
+            font-size: 8em;
+            text-align: center;
+            font-weight: 400;
+            margin: 3px auto;
+            text-shadow: 0px 3px 0px #7F8C8D;
+            display: block;
+        }
+
+        .error-img {
+            background-image: url(/Content/Error/cat.jpg);
+            background-repeat: no-repeat;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @@media (max-width: 767px) {
+            .context {
+                width: 20em;
+                margin: 50px auto;
+                height: 15em;
+            }
+
+            .txt {
+                font-size: 6em;
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .error-img {
+                width: 203px;
+                height: 140px;
+                background-size: cover;
+            }
+        }
+
+        @@media (min-width: 768px) {
+            .context {
+                width: 48em;
+                margin: 100px auto;
+                height: 30em;
+            }
+
+            .txt {
+                font-size: 8em;
+                text-align: center;
+                font-weight: 400;
+            }
+
+            .error-img {
+                width: 290px;
+                height: 200px;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="context">
+        <div class="error-img">
+        </div>
+        <span class="txt">404</span>
+    </div>
+</body>
+</html>
