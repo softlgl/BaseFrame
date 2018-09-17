@@ -153,11 +153,10 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+/.vs
+/.vs/config
 /.vs/BaseFrame/v15/Server/sqlite3
 /packages/
-/.vs/config
-
 /BaseFrame/build/BuildTask
-/.vs
-
 /BaseFrame.WebApi/Logs
+
