@@ -78,7 +78,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>copy $(SolutionDir)BaseFrame.DAL\$(OutDir)BaseFrame.DAL.dll
-copy $(SolutionDir)BaseFrame.Service\$(OutDir)BaseFrame.Service.dll</PostBuildEvent>
+    <PostBuildEvent>copy $(SolutionDir)BaseFrame.DAL\$(OutDir)BaseFrame.DAL.dll;
+copy $(SolutionDir)BaseFrame.Service\$(OutDir)BaseFrame.Service.dll;</PostBuildEvent>
   </PropertyGroup>
 </Project>
