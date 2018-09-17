@@ -160,4 +160,4 @@ $RECYCLE.BIN/
 /BaseFrame/build/BuildTask
 /.vs
 
-
+/BaseFrame.WebApi/Logs

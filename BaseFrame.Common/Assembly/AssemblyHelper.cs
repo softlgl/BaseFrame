@@ -46,7 +46,7 @@ namespace BaseFrame.Common.Assembly
             }
             else if (Directory.Exists(path))
             {
-                dir = path.Substring(0, path.Length - 1);
+                dir = path.EndsWith(@"\") ? path.Substring(0, path.Length - 1) : path;
             }
             if (!dir.IsNullOrWhiteSpace())
             {

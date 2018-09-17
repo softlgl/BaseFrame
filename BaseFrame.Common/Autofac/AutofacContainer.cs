@@ -12,6 +12,7 @@ namespace BaseFrame.Common.Autofac
             System.Reflection.Assembly[] asmDal = AssemblyHelper.GetAllAssembly("*.DAL.dll").ToArray();
             Container.RegisterAssemblyTypes(asmDal)
                 .Where(w => w.Name.EndsWith("DAL"))
+                .PropertiesAutowired()
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope()
                 .SingleInstance();
@@ -19,6 +20,7 @@ namespace BaseFrame.Common.Autofac
             System.Reflection.Assembly[] asmService = AssemblyHelper.GetAllAssembly("*.Service.dll").ToArray();
             Container.RegisterAssemblyTypes(asmService)
                 .Where(w => w.Name.EndsWith("Service"))
+                .PropertiesAutowired()
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope()
                 .SingleInstance();

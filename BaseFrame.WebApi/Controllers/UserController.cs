@@ -18,5 +18,11 @@ namespace BaseFrame.WebApi.Controllers
         {
             return SuccessResult(UserService.GetUserById(id));
         }
+
+        [HttpPost]
+        public ResponseResult Post([FromBody]string user)
+        {
+            return SuccessResult(user);
+        }
     }
 }
